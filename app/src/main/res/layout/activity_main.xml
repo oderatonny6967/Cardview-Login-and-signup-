@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_login"
+        android:layout_width="401dp"
+        android:layout_height="247dp"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:elevation="10dp"
+        app:cardBackgroundColor="#ffff66"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/edittextloginuser"
+                android:layout_width="354dp"
+                android:layout_height="60dp"
+                android:hint="Username" />
+
+            <EditText
+                android:id="@+id/edittextloginpass"
+                android:layout_width="354dp"
+                android:layout_height="60dp"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/edittextloginpass2"
+                android:layout_width="354dp"
+                android:layout_height="60dp"
+                android:hint="Retype password"
+                android:inputType="textPassword" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnreg"
+        android:layout_width="351dp"
+        android:layout_height="63dp"
+        android:layout_below="@id/card_login"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="54dp"
+        android:text="Register" />
+
+    <Button
+        android:id="@+id/btnreg3"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/btnreg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="68dp"
+        android:text="Existing user? Go to sign in ..." />
+
+</RelativeLayout>
+
